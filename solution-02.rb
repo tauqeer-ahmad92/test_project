@@ -7,7 +7,7 @@
 def parser(input)
   Time.zone = "Asia/Karachi"
   input = JSON.parse(input)
-  Time.zone.parse(input["time"]).strftime("%Y-%m-%d %H:%M:%S")
+  Time.zone.parse(input["time"]).strftime("%Y-%m-%d %H:%M:%S %z")
 rescue JSON::ParserError => e
   p e.message
 end
