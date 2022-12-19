@@ -15,7 +15,7 @@ def reverse_string(str)
     str_size -= 1
   end
 
-  p "Revered String: #{reversed_str}"
+  p "Revered String: #{reversed_str.join()}"
 end
 
 # tests
